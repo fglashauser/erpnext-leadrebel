@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-02 16:12:53.477437",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_url",
+  "api_key",
+  "last_sync",
+  "column_break_idfa",
+  "lead_source",
+  "salutation_mrs",
+  "salutation_mr",
+  "sb_filter",
+  "countries"
+ ],
+ "fields": [
+  {
+   "default": "https://app.leadrebel.io/api/",
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Url",
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Synchronization"
+  },
+  {
+   "fieldname": "column_break_idfa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb_filter",
+   "fieldtype": "Section Break",
+   "label": "Filter"
+  },
+  {
+   "description": "If no country is inserted, all countries will be imported",
+   "fieldname": "countries",
+   "fieldtype": "Table",
+   "label": "Countries",
+   "options": "LeadRebel Country Filter"
+  },
+  {
+   "description": "Lead Source which should be assigned",
+   "fieldname": "lead_source",
+   "fieldtype": "Link",
+   "label": "Lead Source",
+   "options": "Lead Source"
+  },
+  {
+   "fieldname": "salutation_mrs",
+   "fieldtype": "Link",
+   "label": "Salutation Mrs",
+   "options": "Salutation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salutation_mr",
+   "fieldtype": "Link",
+   "label": "Salutation Mr",
+   "options": "Salutation",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-01-08 19:13:00.627768",
+ "modified_by": "Administrator",
+ "module": "Leadrebel",
+ "name": "LeadRebel Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

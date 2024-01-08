@@ -4,7 +4,24 @@ app_publisher = "PC-Giga"
 app_description = "Integration für LeadRebel"
 app_email = "info@pc-giga.de"
 app_license = "mit"
-# required_apps = []
+required_apps = ["erpnext"]
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            {
+                "module": "Leadrebel"
+            }
+        ]
+    }
+]
+
+scheduler_events = {
+	"hourly": [
+		"leadrebel.leadrebel.doctype.leadrebel_settings.leadrebel_settings.import_sessions"
+	]
+}
 
 # Includes in <head>
 # ------------------

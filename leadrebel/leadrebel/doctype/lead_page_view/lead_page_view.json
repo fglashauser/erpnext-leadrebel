@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-05 21:50:13.758794",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lr_id",
+  "datetime",
+  "duration",
+  "column_break_wqcx",
+  "website",
+  "path"
+ ],
+ "fields": [
+  {
+   "fieldname": "lr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "lr_id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Datum",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "in_list_view": 1,
+   "label": "Dauer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wqcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Website",
+   "reqd": 1
+  },
+  {
+   "fieldname": "path",
+   "fieldtype": "Read Only",
+   "label": "Pfad",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-08 19:28:39.733862",
+ "modified_by": "Administrator",
+ "module": "Leadrebel",
+ "name": "Lead Page View",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
