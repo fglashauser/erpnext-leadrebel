@@ -50,7 +50,7 @@ class Importer:
         lead = frappe.get_doc({
             "doctype"               : "Lead",
             "type"                  : "Client",
-            "qualification_status"  : "Unqualified",
+            "qualification_status"  : self.config.qualification_status if self.config.qualification_status else "Unqualified",
             "status"                : "Open",
             "source"                : self.config.lead_source,
             "lr_id"                 : company["id"],
@@ -61,6 +61,7 @@ class Importer:
             "email_id"              : prepare_email(company.get("email", None)),
             "phone"                 : standardize_phone_number(company.get("phone", None)),
             "website"               : company.get("website", None),
+            "lead_owner"            : self.config.lead_owner,
             "notes"                 : [frappe.get_doc({"doctype": "CRM Note", "note": company["description"]})] \
                 if company.get("description", None) else None
         }).insert()

@@ -8,10 +8,12 @@
   "api_url",
   "api_key",
   "last_sync",
+  "lead_owner",
   "column_break_idfa",
   "lead_source",
   "salutation_mrs",
   "salutation_mr",
+  "qualification_status",
   "sb_filter",
   "countries"
  ],
@@ -72,12 +74,25 @@
    "label": "Salutation Mr",
    "options": "Salutation",
    "reqd": 1
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Lead Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "description": "Please match to existing values in Select-Box \"qualification_status\"",
+   "fieldname": "qualification_status",
+   "fieldtype": "Data",
+   "label": "Default Qualification Status"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-01-08 19:13:00.627768",
+ "modified": "2024-01-20 13:00:54.395417",
  "modified_by": "Administrator",
  "module": "Leadrebel",
  "name": "LeadRebel Settings",

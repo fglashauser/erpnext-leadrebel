@@ -17,9 +17,9 @@
   {
    "fieldname": "lr_id",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_list_view": 1,
-   "label": "lr_id",
-   "reqd": 1
+   "label": "lr_id"
   },
   {
    "fieldname": "datetime",
@@ -59,7 +59,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-01-08 19:28:39.733862",
+ "modified": "2024-01-20 11:32:01.518642",
  "modified_by": "Administrator",
  "module": "Leadrebel",
  "name": "Lead Page View",
