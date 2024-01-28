@@ -50,7 +50,8 @@ class Importer:
         lead = frappe.get_doc({
             "doctype"               : "Lead",
             "type"                  : "Client",
-            "qualification_status"  : self.config.qualification_status if self.config.qualification_status else "Unqualified",
+            "hk_type"               : "Client",
+            "hk_qualification"      : self.config.qualification_status if self.config.qualification_status else "Unqualified",
             "status"                : "Open",
             "source"                : self.config.lead_source,
             "lr_id"                 : company["id"],
